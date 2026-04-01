@@ -1,0 +1,23 @@
+---
+name: "Continuous Integration"
+on:
+  push:
+    branches-ignore:
+      - 'dependabot/*'
+  pull_request:
+    branches:
+      - 'master'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install bats
+        run: sudo apt-get -y install bats > /dev/null
+      - name: Run CI script
+        run: ./tests/run.bats
+      - name: Run action
+        uses: ./
+        with:
+          yamllint_file_or_dir: "./tests/data/single_files/file2.yml"
