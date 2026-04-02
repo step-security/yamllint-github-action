@@ -36,4 +36,4 @@ outputs:
     description: 'Output of yamllint'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://ghcr.io/step-security/yamllint-github-action:v3.0.1@sha256:1158cfc178d26c99ccf9e42a86f8edeffe2d5d3749de78fcb1be01469585a592' # v3.0.1
