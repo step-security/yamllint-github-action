@@ -1,0 +1,18 @@
+{
+   "schema_version": "1",
+   "onboarding_type": "copied",
+   "archived": false,
+   "maintained_action_name": "step-security/yamllint-github-action",
+   "upstream_full_repo_name": "karancode/yamllint-github-action",
+   "action_type": "docker",
+   "last_release": {
+     "tag_name": "v3.0.1",
+     "created_at": "2026-04-02T08:24:25Z",
+     "published_at": "2026-04-03T05:06:25Z"
+   },
+   "sync": {
+     "ignore_presets": [
+       "defaults_v1"
+     ]
+   }
+ }
